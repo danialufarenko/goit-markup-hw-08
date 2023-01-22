@@ -2,8 +2,9 @@
     background-color: #f5f4fa;
     padding: 60px 0;
 
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
         padding: 94px 0;
+        min-width: 1200px;
     }
 }
 
@@ -36,7 +37,7 @@
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 60px) / 2);
-        margin: 0 15px;
+        margin: 0 15px 30px;
 
         // &:nth-child(1),
         // &:nth-child(3) {
@@ -44,7 +45,7 @@
         // }
     }
 
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
         width: calc((100% - 120px) / 4);
         margin: 0 15px;
 
