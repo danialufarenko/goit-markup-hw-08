@@ -12,12 +12,28 @@
 
 
 .header-nav {
+    width: 100%;
     display: flex;
     align-items: center;
 }
 
 .header-contact {
     margin-left: auto;
+
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+}
+
+.header__burger {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    @media screen and (max-width:768px) {
+        display: block;
+    }
 }
 
 .header-list {
@@ -144,12 +160,16 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
-    margin-right: 40px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
         color: var(--accent-color);
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-right: 30px;
+
     }
 }
 
