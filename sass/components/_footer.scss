@@ -1,6 +1,10 @@
 .footer {
     background-color: #2f303a;
     padding: 60px 0;
+
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+        padding-bottom: 60px;
+    }
 }
 
 .logo-footer {
@@ -11,7 +15,56 @@
 
 .address {
     display: flex;
-    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        max-width: 480px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        max-width: 768px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        text-align: center;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+}
+
+.footer-list {
+    @media screen and (min-width: 320px) and (max-width:1199px) {
+        text-align: center;
+        margin-bottom: 60px;
+    }
 }
 
 .footer-logo {
@@ -37,6 +90,7 @@
 
 .maps-link {
     margin-bottom: 9px;
+    margin-top: 20px;
 }
 
 .maps {
@@ -94,10 +148,16 @@
 
 
 .footer-soc-list {
-    margin-top: -43px;
-    margin-left: 70px;
     width: 206px;
-    height: 80px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+    }
 }
 
 .soc-list {
@@ -137,8 +197,33 @@
 }
 
 .footer-group-input {
-    margin-left: 93px;
-    margin-top: -43px;
+    @media screen and (min-width:1200px) {
+        margin-left: 93px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width:1199px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 }
 
 .footer-text {
@@ -158,6 +243,30 @@
     justify-content: center;
     align-items: center;
     max-width: 570px;
+
+    @media screen and (min-width: 320px) and (max-width:1199px) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 }
 
 .footer-input {
@@ -171,6 +280,12 @@
     color: #ffffff;
     font-size: 14px;
     padding-left: 16px;
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        width: 430px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
 }
 
 .footer-button {
