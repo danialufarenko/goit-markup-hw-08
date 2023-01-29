@@ -10,6 +10,7 @@
         display: flex;
         flex-wrap: wrap;
         max-width: 1170px;
+        gap: 40px;
     }
 
     &__list_items {
@@ -17,12 +18,10 @@
 
         @media screen and (min-width: 768px) {
             width: calc((100% - 60px) / 2);
-            margin: 0 15px 30px;
         }
 
         @media screen and (min-width: 1200px) {
             width: calc((100% - 120px) / 4);
-            margin: 0 15px;
         }
 
     }
