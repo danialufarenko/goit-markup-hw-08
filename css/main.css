@@ -17,12 +17,12 @@
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -99,7 +99,7 @@ img {
 }
 
 .header-contact {
-  margin-left: auto;
+  margin-left: 90px;
 }
 @media screen and (min-width: 320px) {
   .header-contact {
@@ -111,7 +111,6 @@ img {
 @media screen and (min-width: 768px) {
   .header-contact {
     display: flex;
-    margin-left: auto;
     flex-direction: column;
     gap: 10px;
   }
@@ -119,9 +118,10 @@ img {
 @media screen and (min-width: 1200px) {
   .header-contact {
     display: flex;
-    flex-direction: row;
-    margin-left: auto;
+    justify-content: center;
     align-items: center;
+    margin-left: auto;
+    flex-direction: row;
   }
 }
 
@@ -154,7 +154,6 @@ img {
 @media screen and (min-width: 320px) {
   .header-list {
     display: flex;
-    gap: 50px;
     display: none;
   }
 }
@@ -162,17 +161,26 @@ img {
   .header-list {
     display: flex;
     -webkit-box-orient: vertical;
-    gap: 10px;
   }
 }
 
 .header-logo {
-  width: 145px;
+  width: 134px;
   height: 31px;
-  margin-right: 93px;
   text-decoration: none;
   display: flex;
   align-items: center;
+  margin-right: 88px;
+}
+@media screen and (min-width: 768px) {
+  .header-logo {
+    width: 138px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    width: 145px;
+  }
 }
 
 .logo {
@@ -194,7 +202,6 @@ img {
   line-height: 1.1923076923;
   letter-spacing: 0.03em;
   color: #000;
-  margin-right: 93px;
 }
 
 .header-links {
@@ -246,7 +253,7 @@ img {
 
 .header-tel {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -262,7 +269,7 @@ img {
 } */
 .header-mail {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -283,12 +290,13 @@ img {
 } */
 .header-icons {
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
   width: 16px;
 }
 
 .hero {
   max-width: 1600px;
+  height: 600px;
   margin: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img.jpg);
   background-repeat: no-repeat;
@@ -301,14 +309,14 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding: 200px 0;
-  }
-}
 .hero__container {
   width: 100%;
-  padding: 118px 0 118px 0;
+  padding: 118px 0;
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding: 200px 0;
+  }
 }
 .hero__title {
   font-family: inherit;
@@ -406,7 +414,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
-  margin: 30px auto;
+  height: 50px;
+  margin: 30px auto 0;
   padding: 10px 24px;
 }
 .hero__btn:hover, .hero__btn:focus {
@@ -426,7 +435,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   max-width: 1170px;
-  gap: 40px;
+  gap: 30px;
 }
 .text__list_items {
   width: 100%;
@@ -438,7 +447,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .text__list_items {
-    width: calc((100% - 120px) / 4);
+    width: calc((100% - 90px) / 4);
   }
 }
 .text__elements {
@@ -457,7 +466,12 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #212121;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .text__titles {
+    text-align: left;
+  }
 }
 .text__pre_titles {
   font-weight: 400;
@@ -479,6 +493,11 @@ img {
 .work {
   padding-bottom: 94px;
 }
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
 
 .work-title {
   font-family: inherit;
@@ -488,11 +507,12 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .work-list {
   display: flex;
+  gap: 30px;
 }
 
 /* .work-items {
@@ -541,13 +561,12 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1170px;
   gap: 40px;
 }
 
@@ -657,7 +676,7 @@ img {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
   width: 100%;
 }
 @media screen and (min-width: 320px) {
@@ -707,7 +726,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .clients-link {
-    width: 168px;
+    width: 167.51px;
   }
 }
 
@@ -918,7 +937,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-input-wrapper {
