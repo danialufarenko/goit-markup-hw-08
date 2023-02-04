@@ -5,7 +5,8 @@
 .list {
     list-style: none;
 }
-body {
+html, body {
+    width: 100%;
     font-family: "Roboto", sans-serif;
     color: #212121;
 }
