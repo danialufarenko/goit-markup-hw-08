@@ -15,9 +15,20 @@
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mob_img.jpg);
     }
 
-        @media screen and (min-width: 1200px) {
-            height: 600px;
-        }
+    @media screen and (min-width: 768px) {
+        height: 400px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../img/hero-img.jpg);
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 600px;
+        min-width: 1200px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../img/hero-img.jpg);
+    }
 
     &__container {
         width: 100%;
