@@ -8,10 +8,10 @@
     top: 0;
     left: 0;
     z-index: 1;
-    width: 100vw;
     background-color: #fff;
     transform: translateX(150%);
     transition: transform 500ms;
+    display: none;
 
     &__close {
         position: absolute;
@@ -23,9 +23,13 @@
 
     &.is-open {
         transform: translateX(0);
+        display: block;
     }
 
-    &__list {}
+    &__list {
+        width: 100%;
+        margin-bottom: auto;
+    }
 
     &__link {
         font-family: inherit;
@@ -62,7 +66,8 @@
 .mobile-menu-container {
     // width: 320px;
     // width: 100vw;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -75,7 +80,10 @@
 }
 
 
-.contacts-menu__list {}
+.contacts-menu__list {
+    width: 100%;
+    margin-bottom: auto;
+}
 
 .mobile-tel {
     margin-bottom: 32px;
@@ -86,6 +94,7 @@
 }
 
 .soc-menu__list {
+    width: 100%;
     display: flex;
     align-items: center;
     height: 22px;
