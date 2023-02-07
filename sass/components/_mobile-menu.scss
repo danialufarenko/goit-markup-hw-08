@@ -34,7 +34,7 @@
     }
 
     &__link {
-        font-family: inherit;
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
         font-size: 40px;
@@ -45,7 +45,7 @@
     }
 
     &__tel {
-        font-family: inherit;
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
         font-size: 34px;
@@ -55,7 +55,7 @@
     }
 
     &__mail {
-        font-family: inherit;
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
@@ -68,7 +68,7 @@
 .mobile-menu-container {
     // width: 320px;
     // width: 100vw;
-    height: calc(100% - 80px);
+    height: 100%;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@
 
 .contacts-menu__list {
     width: 100%;
-    margin-bottom: auto;
+    margin-bottom: 64px;
 }
 
 .mobile-tel {
@@ -114,7 +114,7 @@
 }
 
 .soc-menu__link {
-    font-family: inherit;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;

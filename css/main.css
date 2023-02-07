@@ -17,17 +17,17 @@
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
 }
 
@@ -258,6 +258,7 @@ img {
 }
 
 .header-tel {
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 12px;
   line-height: 1.14;
@@ -274,6 +275,7 @@ img {
   color: var(--accent-color);
 } */
 .header-mail {
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 12px;
   line-height: 1.14;
@@ -337,27 +339,9 @@ img {
     padding: 200px 0;
   }
 }
-.hero__title {
-  font-family: inherit;
-  font-style: normal;
-  background-color: #2f303a;
-  font-weight: 900;
-  font-size: 26px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  background-color: transparent;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 700px;
-  height: 120px;
-  margin: 0 auto;
-}
 @media screen and (min-width: 320px) {
   .hero__title {
-    font-family: inherit;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
     font-size: 26px;
@@ -366,14 +350,14 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #fff;
-    width: 100%;
+    max-width: 360px;
     height: 84px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 480px) {
   .hero__title {
-    font-family: inherit;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
     font-size: 26px;
@@ -383,13 +367,12 @@ img {
     text-transform: uppercase;
     color: #fff;
     margin: 0 auto;
-    max-width: 400px;
     height: 84px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    font-family: inherit;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
     font-size: 26px;
@@ -399,13 +382,12 @@ img {
     text-transform: uppercase;
     color: #fff;
     margin: 0 auto;
-    max-width: 700px;
     height: 84px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    font-family: inherit;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -420,7 +402,7 @@ img {
   }
 }
 .hero__btn {
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -478,6 +460,7 @@ img {
   align-items: center;
 }
 .text__titles {
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -487,12 +470,13 @@ img {
   color: #212121;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .text__titles {
     text-align: left;
   }
 }
 .text__pre_titles {
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -519,7 +503,7 @@ img {
 }
 
 .work-title {
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -541,7 +525,7 @@ img {
 }
 
 .work-cover-text {
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -573,14 +557,19 @@ img {
 }
 
 .team-title {
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+  }
 }
 
 .team-list {
@@ -602,11 +591,12 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team-items {
-    width: calc((100% - 120px) / 4);
+    width: calc((100% - 90px) / 4);
   }
 }
 
 .team-subject {
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -617,6 +607,7 @@ img {
 }
 
 .team-desc {
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -680,14 +671,25 @@ img {
 }
 
 .client-text {
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .client-text {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-text {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .clients-list {
@@ -735,17 +737,17 @@ img {
 }
 @media screen and (min-width: 320px) {
   .clients-link {
-    width: 208px;
+    width: 210px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-link {
-    width: 224px;
+    width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients-link {
-    width: 164px;
+    width: 170px;
   }
 }
 
@@ -824,7 +826,7 @@ img {
 }
 
 .footer-logo {
-  font-family: inherit;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -835,7 +837,7 @@ img {
 }
 
 .footer-title {
-  font-family: inherit;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -850,6 +852,7 @@ img {
 }
 
 .maps {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -868,6 +871,7 @@ img {
 }
 
 .mail {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -882,6 +886,7 @@ img {
 }
 
 .tel {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -896,21 +901,21 @@ img {
 
 .footer-soc-list {
   width: 100%;
-  margin-bottom: 60px;
   text-align: center;
+  margin-bottom: 60px;
   gap: 30px;
   align-items: baseline;
 }
 @media screen and (min-width: 768px) {
   .footer-soc-list {
     width: auto;
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-soc-list {
     margin-left: 70px;
-    margin-bottom: 60px;
+    margin-bottom: 0;
     text-align: left;
   }
 }
@@ -970,7 +975,7 @@ img {
 }
 
 .footer-text {
-  font-family: inherit;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1028,7 +1033,7 @@ img {
 }
 
 .footer-button {
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -1061,7 +1066,7 @@ img {
 }
 
 .main-button {
-  font-family: inherit;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1116,7 +1121,7 @@ img {
 }
 
 .item-cover-text {
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -1166,6 +1171,7 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 } */
 .title {
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
@@ -1176,6 +1182,7 @@ img {
 }
 
 .subtitle {
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -1212,7 +1219,7 @@ img {
   margin-bottom: auto;
 }
 .mobile-menu__link {
-  font-family: inherit;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -1222,7 +1229,7 @@ img {
   width: auto;
 }
 .mobile-menu__tel {
-  font-family: inherit;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
@@ -1231,7 +1238,7 @@ img {
   color: #2196F3;
 }
 .mobile-menu__mail {
-  font-family: inherit;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -1241,7 +1248,7 @@ img {
 }
 
 .mobile-menu-container {
-  height: calc(100% - 80px);
+  height: 100%;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -1255,7 +1262,7 @@ img {
 
 .contacts-menu__list {
   width: 100%;
-  margin-bottom: auto;
+  margin-bottom: 64px;
 }
 
 .mobile-tel {
@@ -1285,7 +1292,7 @@ img {
 }
 
 .soc-menu__link {
-  font-family: inherit;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1365,7 +1372,7 @@ img {
 }
 
 .modal-heading {
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -1413,7 +1420,7 @@ img {
 
 .modal-input-group label {
   margin-bottom: 10px;
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -1423,7 +1430,7 @@ img {
 }
 
 .modal-text {
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -1507,7 +1514,7 @@ label.modal-politic-label {
 
 .modal-group {
   margin-bottom: 10px;
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -1543,7 +1550,7 @@ label.modal-politic-label {
   background-color: var(--accent-color);
 } */
 .modal-btn {
-  font-family: inherit;
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;

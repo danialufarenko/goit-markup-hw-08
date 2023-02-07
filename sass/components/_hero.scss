@@ -40,25 +40,8 @@
     }
 
     &__title {
-        font-family: inherit;
-        font-style: normal;
-        background-color: #2f303a;
-        font-weight: 900;
-        font-size: 26px;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        background-color: transparent;
-        color: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 700px;
-        height: 120px;
-        margin: 0 auto;
-
         @media screen and (min-width: 320px) {
-            font-family: inherit;
+            font-family: 'Roboto';
             font-style: normal;
             font-weight: 900;
             font-size: 26px;
@@ -67,13 +50,13 @@
             letter-spacing: 0.06em;
             text-transform: uppercase;
             color: #fff;
-            width: 100%;
+            max-width: 360px;
             height: 84px;
             margin: 0 auto;
         }
 
         @media screen and (min-width: 480px) {
-            font-family: inherit;
+            font-family: 'Roboto';
             font-style: normal;
             font-weight: 900;
             font-size: 26px;
@@ -83,12 +66,11 @@
             text-transform: uppercase;
             color: #fff;
             margin: 0 auto;
-            max-width: 400px;
             height: 84px;
         }
 
         @media screen and (min-width: 768px) {
-            font-family: inherit;
+            font-family: 'Roboto';
             font-style: normal;
             font-weight: 900;
             font-size: 26px;
@@ -98,12 +80,11 @@
             text-transform: uppercase;
             color: #fff;
             margin: 0 auto;
-            max-width: 700px;
             height: 84px;
         }
 
         @media screen and (min-width: 1200px) {
-            font-family: inherit;
+            font-family: 'Roboto';
             font-style: normal;
             font-weight: 900;
             font-size: 44px;
@@ -119,7 +100,7 @@
     }
 
     &__btn {
-        font-family: inherit;
+        font-family: 'Roboto';
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
