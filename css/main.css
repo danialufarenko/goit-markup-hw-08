@@ -621,12 +621,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: var(--main-margin);
 }
 
 .team-soc-item {
   width: 44px;
   height: 44px;
-  margin-bottom: var(--main-margin);
 }
 
 .team-soc-item:not(:last-child) {
@@ -798,6 +798,10 @@ img {
   }
 }
 
+.footer-loc {
+  margin-bottom: 60px;
+}
+
 .logo-footer {
   display: block;
   width: 145px;
@@ -813,7 +817,7 @@ img {
 .address {
   display: flex;
   display: -ms-flexbox;
-  margin-bottom: 60px;
+  margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .address {
@@ -854,7 +858,6 @@ img {
 
 .maps-link {
   margin-bottom: 9px;
-  margin-top: 20px;
 }
 
 .maps {
@@ -865,7 +868,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin: 28px 0 12px;
+  margin-bottom: 12px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .maps:hover, .maps:focus {

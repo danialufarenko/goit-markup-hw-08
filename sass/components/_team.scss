@@ -74,12 +74,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: var(--main-margin);
 }
 
 .team-soc-item {
     width: 44px;
     height: 44px;
-    margin-bottom: var(--main-margin);
 }
 
 .team-soc-item:not(:last-child) {
