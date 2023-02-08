@@ -105,7 +105,7 @@ img {
 }
 
 .header-contact {
-  margin-left: 90px;
+  margin-left: auto;
 }
 @media screen and (min-width: 320px) {
   .header-contact {
@@ -176,7 +176,7 @@ img {
   text-decoration: none;
   display: flex;
   align-items: center;
-  margin-right: 88px;
+  margin-right: 80px;
 }
 @media screen and (min-width: 768px) {
   .header-logo {
@@ -260,7 +260,7 @@ img {
 .header-tel {
   font-family: "Roboto";
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -277,7 +277,7 @@ img {
 .header-mail {
   font-family: "Roboto";
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
@@ -721,7 +721,7 @@ img {
 }
 
 .clients-link {
-  height: 90px;
+  height: 92px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -799,9 +799,15 @@ img {
 }
 
 .logo-footer {
+  display: block;
   width: 145px;
-  height: 31px;
+  margin: 0 auto;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    margin: 0;
+  }
 }
 
 .address {

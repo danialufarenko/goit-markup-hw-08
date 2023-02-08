@@ -53,9 +53,14 @@
 }
 
 .logo-footer {
+    display: block;
     width: 145px;
-    height: 31px;
+    margin: 0 auto;
     text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+    }
 }
 
 .address {
